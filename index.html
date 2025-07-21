@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>Hema's Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- header -->
+    <header>
+       <div class="logo"><span>H</span>ema.</div>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+       <div class="menu-icon"> <i class="fa-solid fa-bars"></i> </div>
+    </header>
+   
+    <!-- Home Section----------------------------------------------------------->
+  
+     <section id="home" class="firstSection">
+  <div class="leftSection">
+    <h1>Hi! I am Hema Pandey</h1>
+    <div class="change-text">
+      <h3>And I'm</h3>
+      <div class="text-container">
+        <span id="dynamic-text"></span>
+      </div>
+      <h3>
+        <span class="word">Frontend Developer</span>
+        <span class="word">UI/UX Designer</span>
+        <span class="word">Creative Problem-Solver</span>
+      </h3>
+    </div>
+    <p>I specialize in building responsive, logic-driven web apps using HTML, CSS, JavaScript, React.js, and Figma. Beyond implementation, I focus on clarity, problem-solving, and documenting my learning journey through real projects, breakdowns, and rewrites.</p>
+    
+    <div class="info-box">
+      <div class="email-info">
+        <h5>Email :</h5>
+        <span>hemap2692@gmail.com</span>
+      </div>
+    </div>
+    <br>
+    <div class="buttons">
+      <a href="Hema_Pandey_Resume.pdf" download>
+        <button class="btn">Download Resume</button>
+      </a>
+
+      <a href="https://github.com/hema-pandey" target="_blank">
+        <button class="btn">GitHub Profile</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="rightSection profile-box">
+    <img src="hh.jpg" alt="My Pic" width="80%">
+  </div>
+</section>
+
+ 
+   <section id="about" class="about">
+  <div class="img-about">
+    <img src="hema.jpg" alt="">
+    <div class="about-content">
+      <span>LET ME INTRODUCE MYSELF</span>
+      <h2>About Me</h2>
+      <p>Hi, I’m Hema Pandey—a frontend developer and UI/UX designer who learns by building and rebuilding. My journey started with painting, evolved into designing interfaces, and now I rewrite logic to truly understand what I build. From confusion to confidence, I document every step, focusing on clarity, creativity, and growth.</p>
+
+      <div class="about-section">
+        <p id="shortText">
+          I didn't just learn to code—I learned to think. From struggling to understand basics to now auditing my own projects…
+        </p>
+
+        <p id="fullText" style="display: none;">
+          I started with colors and compositions as a painter, but shifted to frontend when I realized design could be interactive. My early days were full of confusion, copy-paste shortcuts, and self-doubt. But I chose proof over perfection. I built apps, broke logic, documented it all—and now I’m focused on mastering JavaScript, problem-solving, and the MERN stack. My goal isn’t just to get hired—it’s to deserve the offer through clarity, consistency, and confidence.
+        </p>
+
+        <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- services section ------------------------------------------------------ -->
+<section id="services">
+  <h2>My Services</h2>
+  <div class="services-container">
+
+    <!-- 🔥 Web Development -->
+    <div class="service">
+      <i class="fas fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Building fast, responsive websites with clarity and precision.</p>
+      <button onclick="toggleBio('web-dev-bio')">View More</button>
+      <div id="web-dev-bio" class="bio-content">
+        <p>I use HTML, CSS, JavaScript, React, and Bootstrap to develop feature-rich web apps—focusing on reusable components, smooth UX, and performance optimization.</p>
+      </div>
+    </div>
+
+    <!-- 🎨 UI/UX Design -->
+    <div class="service">
+      <i class="fas fa-paint-brush"></i>
+      <h3>UI/UX Design</h3>
+      <p>Creating intuitive, user-first interfaces.</p>
+      <button onclick="toggleBio('uiux-bio')">View More</button>
+      <div id="uiux-bio" class="bio-content">
+        <p>Combining Figma, UX principles, and design psychology to ensure every layout feels natural, engaging, and conversion-friendly.</p>
+      </div>
+    </div>
+
+    <!-- 🔗 API Integration -->
+    <div class="service">
+      <i class="fas fa-server"></i>
+      <h3>API Integration</h3>
+      <p>Bridging front-end logic with backend power.</p>
+      <button onclick="toggleBio('api-bio')">View More</button>
+      <div id="api-bio" class="bio-content">
+        <p>Implementing REST APIs, handling authentication via JWT/OAuth, and ensuring seamless data communication across platforms.</p>
+      </div>
+    </div>
+
+    <!-- 🔄 Git & GitHub -->
+    <div class="service">
+      <i class="fas fa-git"></i>
+      <h3>Git & GitHub</h3>
+      <p>Maintaining clean code history and efficient team workflows.</p>
+      <button onclick="toggleBio('git-bio')">View More</button>
+      <div id="git-bio" class="bio-content">
+        <p>Mastering Git workflows—from branching and version control to PR reviews, commits, CI/CD pipelines, and collaboration strategies.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ 
+  
+   <section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill">
+      <h3>HTML & CSS</h3>
+      <div class="skill-bar" style="--skill-width: 85%;">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <div class="skill-bar" style="--skill-width: 80%;">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h3>React</h3>
+      <div class="skill-bar" style="--skill-width: 75%;">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h3>MERN Stack</h3>
+      <div class="skill-bar" style="--skill-width: 70%;">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h3>Git & GitHub</h3>
+      <div class="skill-bar" style="--skill-width: 80%;">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h3>Figma</h3>
+      <div class="skill-bar" style="--skill-width: 65%;">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <!-- project page------------------------------------------------------------------------------- -->
+  <section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <!-- 💼 Smart Resume Check -->
+    <div class="project">
+      <img src="image.png" alt="Smart Resume Check">
+      <h3>Smart Resume Check</h3>
+      <p>Custom resume analyzer built with pure HTML, CSS, and JavaScript—600+ lines of logic, no frameworks.</p>
+      <a href="https://hema-pandey.github.io/Smart-Resume-Check/" class="btn" target="_blank">View Live</a>
+    </div>
+
+    <!-- ☕ Coffee Chronicles -->
+    <div class="project">
+      <img src="Screenshot (404).png" alt="Coffee Chronicles">
+      <h3>Coffee Chronicles</h3>
+      <p>Scroll-triggered café experience with mood-based brew suggestions and immersive UI.</p>
+      <a href="https://hema-pandey.github.io/coffee-chronicle/" class="btn" target="_blank">View Live</a>
+    </div>
+
+    <!-- 📘 SkillScope -->
+    <div class="project">
+      <img src="Screenshot (405).png" alt="SkillScope">
+      <h3>SkillScope</h3>
+      <p>Interactive quiz + notes app for 10 tech skills, glowing UI, splash screen, and mobile-first design.</p>
+      <a href="https://hema-pandey.github.io/interactive-tech-notes/" class="btn" target="_blank">View Live</a>
+    </div>
+
+    <!-- 🔢 SortFlow.js -->
+    <div class="project">
+      <img src="Screenshot (407).png" alt="SortFlow.js">
+      <h3>SortFlow.js</h3>
+      <p>Sorting algorithm visualizer with animated bars, speed control, and poetic UI transitions.</p>
+      <a href="https://hema-pandey.github.io/SortFlow.js/" class="btn" target="_blank">View Live</a>
+    </div>
+
+    <div class="project">
+  <img src="Screenshot (408).png" alt="Birthday Frontend App">
+  <h3>Birthday Frontend App</h3>
+  <p>A celebratory web app with confetti, music, wish generator, theme toggle, and countdown—built to mark turning 21 with code.</p>
+  <a href="https://hema-pandey.github.io/birthday-frontend-app/" class="btn" target="_blank">View Live</a>
+</div>
+
+
+  </div>
+</section>
+
+
+   <!--contact page------------------------------------------------------------------------->
+   <section id="contact">
+     <h2>Get in Touch</h2>
+   
+     <form action="#" method="post">
+       <div class="form-group">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+       </div>
+   
+       <div class="form-group">
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+       </div>
+   
+       <div class="form-group">
+         <label for="message">Message:</label>
+         <textarea id="message" name="message" rows="5" required></textarea>
+       </div>
+   
+       <button type="submit">Send Message</button>
+     </form>
+   </section>
+   
+   <!-- <footer>
+  <p>© 2025 Hema Pandey. Built with ❤️ using HTML, CSS & JS.</p>
+</footer> -->
+
+   
+   <script src="script.js"></script>
+</body>
+</html>
